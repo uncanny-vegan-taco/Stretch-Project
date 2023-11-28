@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("media/diagram.png");
+  width: 100%;
+  background-size: cover;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+}
+.select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.primary-button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: blueviolet;
+  border: 1px solid blueviolet;
+  color: white;
+  width: 100px;
+  transition: 200ms ease-in-out;
+}
+.primary-button:hover {
+  background-color: white;
+  color: blueviolet;
+}
