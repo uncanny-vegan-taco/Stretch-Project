@@ -7,13 +7,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("media/diagram.png");
-  width: 100%;
-  background-size: cover;
+  background-color: var(--light);
 }
 h1 {
   text-align: center;
   font-size: 50px;
+}
+h2 {
+  text-align: center;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -21,7 +22,7 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 200px 0px;
+  padding: 150px 0px;
   color: white;
 }
 iframe {
@@ -41,9 +42,9 @@ iframe {
 }
 .primary-button {
   text-align: center;
-  font-size: 16px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  font-size: 20px;
+  padding-top: 21.5px;
+  padding-bottom: 21.5px;
   background-color: var(--light-blue);
   border-bottom: 1px solid rgba(0, 0, 0, 0.103);
   color: var(--dark-blue);
@@ -54,4 +55,9 @@ iframe {
 .primary-button:hover {
   background-color: var(--dark-blue);
   color: var(--light);
+}
+
+#map {
+  width: 100%;
+  height: 600px;
 }

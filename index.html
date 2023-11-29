@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Time to Stretch!</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <header>
-      <h1>What do you want to Stretch?</h1>
+      <h1>Time to Loosen Up!</h1>
     </header>
+    <h2>Select the Area of the Body you want to Work:</h2>
     <main class="container">
       <div class="select">
         <p id="neck" class="primary-button">Neck</p>
@@ -39,6 +42,8 @@
         <p id="fullbody" class="primary-button">Full Body</p>
       </div>
     </main>
+    <div id="map"></div>
+    <footer>Here is where something will be</footer>
     <script src="src/script.js"></script>
   </body>
 </html>

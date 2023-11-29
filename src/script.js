@@ -83,3 +83,29 @@ fullbody.addEventListener("click", () => {
   media.innerHTML =
     '<iframe src="https://www.youtube.com/embed/GLy2rYHwUqY?si=LjcAGayVl5uVfROC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 });
+
+function handlePosition(response) {
+  console.log(response);
+  const lat = response.coords.latitude;
+  const lon = response.coords.longitude;
+
+  let location = new mapkit.CoordinateRegion(
+    new mapkit.Coordinate(lat, lon),
+    new mapkit.CoordinateSpan(0.167647972, 0.354985255)
+  );
+
+  let map = new mapkit.Map("map");
+  map.region = location;
+}
+mapkit.init({
+  authorizationCallback: function (done) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "/services/jwt");
+    xhr.addEventListener("load", function () {
+      done(this.responseText);
+    });
+    xhr.send();
+  },
+});
+
+navigator.geolocation.getCurrentPosition(handlePosition);
