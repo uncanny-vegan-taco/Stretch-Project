@@ -11,10 +11,17 @@ body {
 }
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 90px;
+}
+h2,
+h3 {
+  text-align: center;
 }
 h2 {
-  text-align: center;
+  font-size: 30px;
+}
+h3 {
+  font-size: 40px;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -22,8 +29,9 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 150px 0px;
+  padding: 100px 0px;
   color: white;
+  line-height: 0.3;
 }
 iframe {
   aspect-ratio: 16/9;
@@ -42,6 +50,7 @@ iframe {
   display: flex;
   flex-direction: column;
   width: 30%;
+  justify-content: space-evenly;
 }
 .primary-button {
   text-align: center;
@@ -67,7 +76,9 @@ iframe {
 }
 #glutes {
   border-bottom-left-radius: 20px;
+  border: none;
 }
 #fullbody {
   border-bottom-right-radius: 20px;
+  border: none;
 }
